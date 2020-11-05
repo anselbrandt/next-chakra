@@ -8,7 +8,7 @@ The chakra-ui `ChakraProvider` in `/pages/_app.tsx` provides theming context, co
 
 ## Deploy this demo
 
-Deploy the example using [Vercel](https://vercel.com):
+Deploy this example using [Vercel](https://vercel.com):
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/anselbrandt/next-chakra)
 
@@ -16,7 +16,7 @@ Deploy the example using [Vercel](https://vercel.com):
 
 ### Using `npx degit`
 
-Execute [`npx degit`](https://github.com/Rich-Harris/degit) to bootstrap the example:
+Execute [`npx degit`](https://github.com/Rich-Harris/degit) to bootstrap this example:
 
 ```bash
 npx degit https://github.com/anselbrandt/next-chakra next-chakra
@@ -27,6 +27,8 @@ Then:
 ```
 cd next-chakra
 yarn
+or
+npm install
 ```
 
 After that:
@@ -35,6 +37,14 @@ After that:
 yarn dev
 or
 yarn build
+```
+
+or
+
+```
+npm start
+or
+npm run-script build
 ```
 
 ## Setup
@@ -53,7 +63,13 @@ query QueryName {
 }
 ```
 
-After adding any new queries to the `/graphql/` folder, execute `yarn gen`
+After adding any new queries to the `/graphql/` folder, execute:
+
+```
+yarn gen
+or
+npm run-script gen
+```
 
 [GraphQL code generator](https://graphql-code-generator.com/) will connect to your GraphQL server, generate typings based on your schema and output custom `hooks` to `/generated/graphql.tsx`.
 
